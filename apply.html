@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Sign Up</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="w3.css">
+</head>
+<body id="body-img" class="w3-container">
+
+	<br /><br />
+
+	<div class="heading">
+		<h1>Welcome to Geleza Mzansi</h1>
+		<h2>Online Application</h2>
+	</div>
+
+	<span class="clickon">
+		<p><a href="#" style="margin-right: 8px;" onclick="document.getElementById('id01').style.display='block'">Sign In</a>
+			<a href="#" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+		</p>
+	</span>
+
+
+
+	<div id="id01" class="w3-modal mod">
+		<div class="w3-modal-content w3-animate-zoom">
+			<header class="w3-container con" style="padding-bottom: 20px;">
+				<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn ex"> &times;		
+				</span>
+				<br /><br />
+				<img id="img-pic" src="pictures/profile.jpg">
+				
+			</header>
+			<div class="w3-container">
+				<form action="home.html" method="post">
+					<br/>
+					<label for="uname" class="rem">
+						<b>Username</b>
+					</label>
+					<br/>
+					<input type="text" name="uname" placeholder="Enter Username" required="required">
+					<br/><br/>
+					<label for="psw" class="rem">
+						<b>Password</b>
+					</label>
+					<br/>
+					<input type="password" name="psw" placeholder="Enter Password" required="required">
+					<br/><br/>
+					<button type="submit" class="login">Login</button>
+					<label class="rem">
+						<br/><br/>
+					<input type="checkbox" name="remember" checked="checked"> Remember me
+					</label>
+					<span class="psw" style="float: right;"><a href="#">Forgot password ?</a></span>
+					<br/><br/>
+				</form>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<!-- 		SIGN UP SECTION -->
+
+	<div id="id02" class="w3-modal mod">
+		<div class="w3-modal-content w3-animate-zoom">
+			<header class="w3-container con" style="padding-bottom: 20px;">				
+					<span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn ex"> &times;		
+					</span>				
+			</header>
+			<div class="w3-container">
+				<br/><br/>
+
+				<!-- Personal Info -->
+				<fieldset>
+				<legend class="fHead">Personal Information</legend>
+				
+				<form action="#" method="post">
+					<br/>
+					<label for="name" class="rem">
+						<b>Name</b>
+					</label>
+					<br/>
+					<input type="text" name="name" placeholder="Enter Your Name" required="required">
+					<br/><br/>
+					<label for="sName" class="rem">
+						<b>Surname</b>
+					</label>
+					<br/>
+					<input type="text" name="sName" placeholder="Enter Your Surname..." required="required">
+					<br/><br/>
+
+					<label for="id" class="rem">
+						<b>Identity Number</b>
+					</label>
+					<br/>
+					<input type="text" name="id" placeholder="Your Identity Number..." required="required">
+					<br/><br/>
+
+					<label for="gen" class="rem">
+						<b>Gender</b>
+					</label>
+					<br/>
+					<input type="text" name="gen" placeholder="Your Gender..." required="required">
+					<br/><br/>
+
+					<label for="lang" class="rem">
+						<b>Home Language</b>
+					</label>
+					<br/>
+					<input type="text" name="lang" placeholder="Your Home Language..." required="required">
+				
+				</fieldset>
+
+				<br/><br/>
+
+				<fieldset>
+					<legend class="fHead">Additional Information</legend>
+					<br/>
+					<label for="kin" class="rem">
+						<b>Next of Kin</b>
+					</label>
+					<br/>
+					<input type="text" name="kin" placeholder="Next of Kin..." required="required">
+					<br/><br/>
+					<label for="relate" class="rem">
+						<b>Relationship</b>
+					</label>
+					<br/>
+					<input type="text" name="relate" placeholder="Your Relationship with them..." required="required">
+					<br/><br/>
+					<label for="cDet" class="rem">
+						<b>Cell-Phone Number</b>
+					</label>
+					<br/>
+					<input type="text" name="sName" placeholder="Their Cell-Phone Number..." required="required">
+					
+				</fieldset>
+
+				<br/><br/>
+					<!-- ADDRESS INFORMATION -->
+
+					<fieldset>
+					<legend class="fHead">Address Information</legend>
+					<br/>
+					<label for="pAdd" class="rem">
+						<b>Physical or Residential Address</b>
+					</label>
+					<br/>
+					<input type="text" name="pAdd" placeholder="Enter Your Physical/Residential Address..." required="required">
+					<br/><br/>
+
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="city" placeholder="Town, City or Suburb..." required="required">
+					<br/><br/>
+					<label for="code" class="rem">						
+						<b>Area Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Area Code..." required="required">	
+
+					<br/><br/>
+
+					<label for="post" class="rem">
+						<b>Postal Address</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="post" placeholder="Postal Address..." required="required">	
+
+					<br/><br/>
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					<br/>
+					<input type="text" name="city" placeholder="Town, City, or Suburb...">
+					<br/><br/>
+					<label for="code" class="rem">
+						<b>Postal Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Postal Code...">
+
+				</fieldset>
+
+					<br/><br/>
+					<!-- CONTACT INFORMATION -->
+
+					<fieldset>
+					<legend class="fHead">Contact Information</legend>
+					<br/>
+					<label for="email" class="rem">
+						<b>E-mail Address</b>
+					</label>
+					<br/>
+					<input type="text" name="email" placeholder="Enter Your E-mail Address..." required="required">
+					<br/><br/>
+					<label for="cellNo" class="rem">
+						<b>Cell-Phone Number</b>
+					</label>
+					<br/>
+					<input type="text" name="cellNo" placeholder="Enter Your Cell-Phone Number..." required="required">
+					<br/><br/>					
+
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="city" placeholder="Town, City or Suburb..." required="required">
+					<br/><br/>
+					<label for="code" class="rem">						
+						<b>Area Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Area Code..." required="required">		
+
+				</fieldset>
+					<!-- Educational info -->
+					<br/><br/>
+					
+					<fieldset>
+					<legend class="fHead">Education</legend>
+					<br/>
+					<label for="school" class="rem">
+						<b>Name of Previous School</b>
+					</label>
+					<br/>
+					<input type="text" name="school" placeholder="Previous School you Attented..." required="required">
+					<br/><br/>
+					<label for="prov" class="rem">
+						<b>Province</b>
+					</label>
+					<br/>
+					<input type="text" name="prov" placeholder="Province where school is..." required="required">
+					<br/><br/>
+					<label for="town" class="rem">
+						<b>Town or Suburb</b>
+					</label>
+					<br/>
+					<input type="text" name="town" placeholder="Your Town or Suburb..." required="required">
+
+				</fieldset>
+				<br/><br/>
+
+					<button type="submit" class="login">Submit</button>
+					<label class="rem">
+						<br/><br/>					
+				
+				</form>
+				<br/><br/><br/>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

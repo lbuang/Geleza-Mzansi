@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="w3(new).css">
+	<link rel="stylesheet" type="text/css" href="style(update).css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+
+	<style type="text/css">
+		div.card
+		{
+			width: 350px;
+  			height: 270px;
+  			padding: 16px;
+  			border-radius: 10px;  	
+  			float: left;		
+  			margin-bottom: 20px;
+  			margin-left: 30px;
+  			background-color: white;
+  			color: #e6005c;
+  		}	
+
+		.dash-link
+		{
+			text-decoration: none;
+			border-bottom: 1px solid #e6005c;
+			padding: 14px;
+		}	
+		.dash-link:hover
+		{
+			background-color: #e6005c;
+			color: white;
+			border-radius: 10px;			
+		}
+
+		.back
+		{
+			background-image: url(pictures/images-3.jpg);
+			background-repeat: all;
+		}
+
+	</style>
+</head>
+<body class="back">
+	<div class="navbar nav w3-bar">
+		<span class="w3-mobile">
+			<!--
+		<a class="w3-bar-item w3-mobile navlink " href="dashboard.html">DashBoard</a>
+		
+		<a class="w3-bar-item w3-mobile navlink " href="#abt" class=" w3-animate-top">About Us</a>
+		<a class="w3-bar-item w3-mobile navlink " href="#con">Contact Us</a>
+	-->
+		<a class="w3-bar-item w3-mobile navlink" onclick="document.getElementById('id02').style.display='block'" style="cursor: pointer;">Apply</a>
+		<a class="w3-bar-item w3-mobile navlink "onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;float: right;">&#9776;</a>
+	</span>
+	</div>
+<i class="fa fa-pencil-square-o"></i>
+
+	<!--		SIDE NAVIGATION		-->
+
+	<div id="id01" class="w3-modal mod">
+		<div class="w3-modal-content w3-animate-zoom">
+			<header class="w3-container con" style="padding-bottom: 20px;">
+				<span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-large ex" style="float: right;cursor: pointer;"> &times;		
+				</span>
+				<br /><br />				
+				
+			</header>
+			<div class="w3-container">
+				<p class="profile">
+					<a href="#">View Profile</a>
+					<br/><br/>
+					<a href="#"><i class="material-icons">dashboard</i> Dash Board</a>
+					<br/><br/>
+					<a href="#"><i class="fa fa-hourglass-start"></i> Track Application Progress</a>
+					<br/><br/>
+					<a href="#"><i class="material-icons">note_add</i>Add Choice/Course</a>
+					<br/><br/>
+					<a href="index.html"><i class="material-icons">input</i> Sign Out ?</a>
+				</p>
+			</div>
+
+		</div>
+		
+	</div>
+	<!-- END -->
+	<br /><br /><br /><br />
+<div>
+	<label style="padding: 30px;color: #e6005c; background-color: white;">
+					<i class="material-icons">dashboard</i> <strong>DashBoard</strong></label>
+</div>
+<br /><br /><br /><br />
+<!-- <hr style="border-color: #e6005c;" /> -->
+<div class="">
+	<div class="w3-card card w3-third">
+		<span>
+			<b><i class="material-icons">perm_identity</i> Personal Info</b>
+		</span>
+		<p>
+			<br/>
+			<a class="dash-link" href="#"><i class="fa fa-info-circle w3-large" aria="hidden"></i> Display Information</a>
+			<br/><br/><br/>
+			<a class="dash-link" href="#"><i class="far fa-edit" ></i> Edit/Change Information</a>
+		</p>
+	</div>	
+
+
+	<div class="w3-card card w3-third">
+		<span>
+			<b><i class="fa fa-hourglass-start"></i> Application Progress</b>
+		</span>
+		<br/>
+		<p>
+			<br/>
+			<a class="dash-link" onclick="document.getElementById('sect1').style.display='block'" style="cursor: pointer;">Have Referrence No? Click here</a>
+			<br/><br/><br/>
+			<a class="dash-link" onclick="document.getElementById('sect2').style.display='block'" style="cursor: pointer;">No Referrence ? Click here</a>
+		</p>
+	</div>
+
+	<div class="w3-card card w3-third">
+		<span>
+			<i class="fa fa-briefcase"></i>
+			<b>Tools</b>
+		</span>
+		<br/>
+		<p>
+			<br/>
+			<a class="dash-link" href="#"><i class="fa fa-eye"></i> View Choices</a>
+			<br/><br/><br/>
+			<a class="dash-link" href="#"><i class="fa fa-upload"></i> Upload Documents</a>
+			<br/><br/><br/>
+			<a class="dash-link" href="#"><i class="fa fa-plus-circle"></i> Add Course/Choices</a>
+		</p>
+	</div>
+
+	<div class="w3-card card w3-third" style="width: 82.1566%;">
+		<span>
+			<b><i class="fa fa-bell"></i> Notice Board</b>
+		</span>
+		<br/>
+		<p>
+			There are no new updates currently...
+		</p>
+	</div>
+
+</div>
+
+	<br /><br /><br /><br/>
+
+	
+
+	<div id="sect1" class="w3-modal">
+		<div class="w3-modal-content">
+			<header class="w3-container" style="background-color: #e6005c;padding: 20px;">
+				<span onclick="document.getElementById('sect1').style.display='none'" class="w3-closebtn w3-large" style="cursor: pointer;color: white;">x</span>
+			</header>
+
+			<div class="w3-container">
+				<form>
+					<br/>
+					<label for="idNo" class="rem">
+						<b>Identity Number</b>
+					</label>
+					<br/>
+					<input type="text" name="idNo" placeholder="Enter Your ID Number">
+
+					<br/><br/>
+					<label for="idNo" class="rem">
+						<b>Referrence Number</b>
+					</label>
+					<br/>
+					<input type="text" name="idNo" placeholder="Enter Your Ref Number">
+
+					<br/><br/>
+					<button type="submit" class="login">Submit</button>
+					<br/><br/>
+				</form>
+			</div>
+		</div>
+			
+	</div>
+		
+
+	<div id="sect2" class="w3-modal">
+		<div class="w3-modal-content">
+			<header class="w3-container" style="background-color: #e6005c;padding: 20px;">
+				<span onclick="document.getElementById('sect2').style.display='none'" class="w3-closebtn w3-large" style="cursor: pointer;color: white;">x</span>
+			</header>
+
+			<div class="w3-container">
+				<form>
+					<br/>
+					<label for="idNo" class="rem">
+						<b>Identity Number</b>
+					</label>
+					<br/>
+					<input type="text" name="idNo" placeholder="Enter Your ID Number">
+
+					<br/><br/>
+					<label for="idNo" class="rem">
+						<b>Referrence Number</b>
+					</label>
+					<br/>
+					<input type="text" name="idNo" placeholder="Enter Your Ref Number">
+
+					<br/><br/>
+					<button type="submit" class="login">Submit</button>
+					<br/><br/>
+				</form>
+			</div>
+		</div>
+			
+	</div>
+
+	<!--	APPLICATION FORM -->
+
+	<div id="id02" class="w3-modal mod">
+		<div class="w3-modal-content w3-animate-zoom">
+			<header class="w3-container con" style="padding-bottom: 20px;">				
+					<span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn ex w3-large" style="float: right;cursor: pointer;"> &times;		
+					</span>				
+			</header>
+			<div class="w3-container">
+				<br/><br/>
+
+				<!-- Personal Info -->
+				<fieldset>
+				<legend class="fHead">Personal Information</legend>
+				
+				<form action="#" method="post">
+					<br/>
+					<label for="name" class="rem">
+						<b>Name</b>
+					</label>
+					<br/>
+					<input type="text" name="name" placeholder="Enter Your Name" required="required">
+					<br/><br/>
+					<label for="sName" class="rem">
+						<b>Surname</b>
+					</label>
+					<br/>
+					<input type="text" name="sName" placeholder="Enter Your Surname..." required="required">
+					<br/><br/>
+
+					<label for="id" class="rem">
+						<b>Identity Number</b>
+					</label>
+					<br/>
+					<input type="text" name="id" placeholder="Your Identity Number..." required="required">
+					<br/><br/>
+
+					<label for="gen" class="rem">
+						<b>Gender</b>
+					</label>
+					<br/>
+					<input type="text" name="gen" placeholder="Your Gender..." required="required">
+					<br/><br/>
+
+					<label for="lang" class="rem">
+						<b>Home Language</b>
+					</label>
+					<br/>
+					<input type="text" name="lang" placeholder="Your Home Language..." required="required">
+				
+				</fieldset>
+
+				<br/><br/>
+
+				<fieldset>
+					<legend class="fHead">Additional Information</legend>
+					<br/>
+					<label for="kin" class="rem">
+						<b>Next of Kin</b>
+					</label>
+					<br/>
+					<input type="text" name="kin" placeholder="Next of Kin..." required="required">
+					<br/><br/>
+					<label for="relate" class="rem">
+						<b>Relationship</b>
+					</label>
+					<br/>
+					<input type="text" name="relate" placeholder="Your Relationship with them..." required="required">
+					<br/><br/>
+					<label for="cDet" class="rem">
+						<b>Cell-Phone Number</b>
+					</label>
+					<br/>
+					<input type="text" name="sName" placeholder="Their Cell-Phone Number..." required="required">
+					
+				</fieldset>
+
+				<br/><br/>
+					<!-- ADDRESS INFORMATION -->
+
+					<fieldset>
+					<legend class="fHead">Address Information</legend>
+					<br/>
+					<label for="pAdd" class="rem">
+						<b>Physical or Residential Address</b>
+					</label>
+					<br/>
+					<input type="text" name="pAdd" placeholder="Enter Your Physical/Residential Address..." required="required">
+					<br/><br/>
+
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="city" placeholder="Town, City or Suburb..." required="required">
+					<br/><br/>
+					<label for="code" class="rem">						
+						<b>Area Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Area Code..." required="required">	
+
+					<br/><br/>
+
+					<label for="post" class="rem">
+						<b>Postal Address</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="post" placeholder="Postal Address..." required="required">	
+
+					<br/><br/>
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					<br/>
+					<input type="text" name="city" placeholder="Town, City, or Suburb...">
+					<br/><br/>
+					<label for="code" class="rem">
+						<b>Postal Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Postal Code...">
+
+				</fieldset>
+
+					<br/><br/>
+					<!-- CONTACT INFORMATION -->
+
+					<fieldset>
+					<legend class="fHead">Contact Information</legend>
+					<br/>
+					<label for="email" class="rem">
+						<b>E-mail Address</b>
+					</label>
+					<br/>
+					<input type="text" name="email" placeholder="Enter Your E-mail Address..." required="required">
+					<br/><br/>
+					<label for="cellNo" class="rem">
+						<b>Cell-Phone Number</b>
+					</label>
+					<br/>
+					<input type="text" name="cellNo" placeholder="Enter Your Cell-Phone Number..." required="required">
+					<br/><br/>					
+
+					<label for="city" class="rem">
+						<b>City</b>
+					</label>
+					
+					<br/>
+					<input type="text" name="city" placeholder="Town, City or Suburb..." required="required">
+					<br/><br/>
+					<label for="code" class="rem">						
+						<b>Area Code</b>
+					</label>
+					<br/>
+					<input type="text" name="code" placeholder="Area Code..." required="required">		
+
+				</fieldset>
+					<!-- Educational info -->
+					<br/><br/>
+					
+					<fieldset>
+					<legend class="fHead">Education</legend>
+					<br/>
+					<label for="school" class="rem">
+						<b>Name of Previous School</b>
+					</label>
+					<br/>
+					<input type="text" name="school" placeholder="Previous School you Attented..." required="required">
+					<br/><br/>
+					<label for="prov" class="rem">
+						<b>Province</b>
+					</label>
+					<br/>
+					<input type="text" name="prov" placeholder="Province where school is..." required="required">
+					<br/><br/>
+					<label for="town" class="rem">
+						<b>Town or Suburb</b>
+					</label>
+					<br/>
+					<input type="text" name="town" placeholder="Your Town or Suburb..." required="required">
+
+				</fieldset>
+				<br/><br/>
+
+					<button type="submit" class="login">Submit</button>
+					<label class="rem">
+						<br/><br/>
+					
+				
+				</form>
+				<br/><br/><br/>
+			</div>
+
+		</div>
+		
+	</div>	
+
+
+</body>
+</html>
